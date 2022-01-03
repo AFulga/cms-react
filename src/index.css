@@ -146,7 +146,7 @@ body {
   width: 100%;
 }
 
-/* .menu-posts-btn svg:hover ~ .img-background,
+.menu-posts-btn svg:hover ~ .img-background,
 .menu-posts-btn i:hover ~ .img-background,
 .menu-posts-btn .delete-count:hover ~ .img-background,
 .menu-add-post:hover {
@@ -155,7 +155,7 @@ body {
   -moz-transition: background-color 0.3s linear;
   -o-transition: background-color 0.3s linear;
   transition: background-color 0.3s;
-} */
+}
 
 .menu-posts-btn > svg {
   /* padding-right: 3px; */
@@ -301,7 +301,7 @@ button.cancel-btn:hover {
   color: #a9b1c0;
   font-family: 'Larsseit-Thin', sans-serif;
   padding: 16px 5px;
-  margin-right: 12px;
+  /* margin-right: 12px; */
 }
 
 .flex-1 {
@@ -316,7 +316,7 @@ button.cancel-btn:hover {
   padding: 0 14px;
 }
 
-.post-row:not(.selected) .fa-check-square,
+/* .post-row:not(.selected) .fa-check-square,
 .posts-header:not(.selected) .fa-check-square {
   display: none;
 }
@@ -324,7 +324,7 @@ button.cancel-btn:hover {
 .post-row.selected .fa-square,
 .posts-header.selected .fa-square {
   display: none;
-}
+} */
 
 .fa-square {
   color: #fff;

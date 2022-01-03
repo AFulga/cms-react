@@ -1,15 +1,23 @@
 import { faCheckSquare, faSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 
-const RowElement = ({ title, author, category, date, editChild }) => {
-  const [checked, setChecked] = useState(false);
-  const handleCheck = () => setChecked((prev) => !prev);
+const RowElement = ({
+  handleClick,
+  title,
+  author,
+  category,
+  date,
+  editChild,
+  isSelected,
+}) => {
   return (
     <>
-      <div className={`check-box ${checked && 'selected'}`}>
-        <FontAwesomeIcon icon={faSquare} onClick={handleCheck} />
-        <FontAwesomeIcon icon={faCheckSquare} onClick={handleCheck} />
+      <div className={`check-box`}>
+        {!isSelected ? (
+          <FontAwesomeIcon icon={faSquare} />
+        ) : (
+          <FontAwesomeIcon icon={faCheckSquare} />
+        )}
       </div>
       <div className='flex-2 post-title'>{title}</div>
       <div className='flex-1'>{author}</div>
